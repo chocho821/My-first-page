@@ -1,0 +1,378 @@
+/* 전체 요소 기본 설정 */
+* {
+  box-sizing: border-box;
+}
+
+
+/* 전체 페이지 */
+body {
+  margin: 0;
+
+  color: rgb(30, 30, 30);
+  background-color: #ffffff;
+
+  font-family: "Pretendard", sans-serif;
+}
+
+/* 플로팅 버튼 */
+.top_btn {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 100;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 32px;
+  height: 32px;
+
+  color: white;
+  background-color: rgb(0, 85, 255);
+  text-decoration: none;
+
+  border-radius: 50%;
+}
+
+
+/* 상단 헤더 */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 16px 60px;
+
+  background-color: #212121;
+  border-bottom: 1px solid darkgrey;
+}
+
+
+header h1 {
+  margin: 0;
+
+  color: white;
+
+  font-size: 24px;
+  font-weight: 900;
+  text-align: left;
+}
+
+
+/* 메뉴 */
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+
+  margin-left: auto;
+}
+
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 400;
+}
+
+
+.main-nav a:hover {
+  color: rgb(0, 85, 255);
+}
+
+
+
+/* 메인 영역 너비 */
+main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: 380px;
+  object-fit:cover;
+}
+
+
+
+/* 각 카테고리 간격 */
+main > section {
+  margin-bottom: 60px;
+}
+
+
+/* 본문 */
+p {
+  color: black;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* 제목 */
+.title_01,
+.title_02 {
+  color: rgb(0, 85, 255);
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+h3 {
+  color: rgb(0, 85, 255);
+
+  font-size: 18px;
+  text-align: left;
+}
+
+
+/* 설명 문단 */
+.desc {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* 모든 이미지가 부모 영역을 넘지 않도록 설정 */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* 두 카드를 가로로 배치하는 부모 */
+.overflow_card {
+  display: flex;
+  gap: 24px;
+}
+
+/* 개별 카드 설정 */
+
+.box01{
+  flex: 1;
+  padding: 20px;
+  border: 1px solid rgb(0, 85, 255);
+  border-radius: 10px;
+  overflow: auto;
+  }
+
+
+.profile_tb{
+  flex: 1;
+  padding: 30px;
+  border: 1px solid rgb(0, 85, 255);
+  border-radius: 10px;
+  overflow: auto;
+}
+
+
+.box03{
+  flex: 1;
+  padding: 15px;
+  border: 1px solid  rgb(0, 85, 255);
+  border-radius: 10px;
+  overflow: auto;
+}
+
+
+.box04{
+  flex: 1;
+  padding: 15px;
+  border: 1px solid  rgb(0, 85, 255);
+  border-radius: 10px;
+  overflow: auto;
+}
+
+
+
+
+
+/* 프로필 표 */
+.profile_tb table {
+  width: 100%;
+  border-collapse: collapse;
+  /* border-top: 1px solid rgba(0, 0, 0, 0.4); */
+  font-size: 14px;
+}
+
+
+
+/* 표의 양 사이드와 세로선 제거 */
+.profile_tb th,
+.profile_tb td {
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.profile_tb th {
+  width: 30%;
+  text-align: left;
+}
+
+
+/* 입력 항목 사이 간격 */
+form > div {
+  margin-bottom: 18px;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+
+/* 입력창 */
+input {
+  width: 100%;
+  max-width: 600px;
+  height: 32px;
+
+  padding: 8px;
+
+  border: 1px solid rgb(0, 85, 255);
+  border-radius: 6px;
+}
+
+textarea {
+  width: 100%;
+  max-width: 600px;
+  height: 200px;
+
+  padding: 10px;
+
+  border: 1px solid rgb(0, 85, 255);
+  border-radius: 8px;
+
+  font-family: "Pretendard", sans-serif;
+}
+
+
+/* 문의버튼 */
+.btn {
+  display: inline-block;
+
+  width: 100%;
+  max-width: 600px;
+  height: 36px;
+
+  padding: 2px;
+
+  color: white;
+  background-color: rgba(0, 85, 255, 0.7);
+
+  font-size: 16px;
+
+  border: 1px solid rgb(0, 85, 255);
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+
+
+/* 문의버튼 hover */
+.btn:hover {
+  color: rgb(0, 85, 255);
+  background-color: rgb(212, 212, 212);
+}
+
+
+/* 푸터 */
+footer {
+  margin-top: 0;
+  padding: 40px 40px;
+
+  color: white;
+  background-color: rgb(68, 68, 68);
+}
+
+
+/* 미디어쿼리 : 반응형 */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding:24px;
+
+    .img {
+      height: 280px;
+    }
+
+  }
+
+
+  /* 모바일 메뉴 */
+  .main-nav {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 12px 24px;
+
+    margin-left: 0;
+  }
+
+  .main-nav a {
+    font-size: 11px;
+  }
+
+
+  /* 모바일 메인 */
+  main {
+    width: 95%;
+    padding: 24px 24px;
+  }
+
+  .title_01,
+  .title_02 {
+    font-size: 20px;
+  }
+
+
+  /* 카드 배치 */
+  .overflow_card {
+    flex-direction: column;
+  }
+
+
+  .box01,
+  .profile_tb {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+
+ 
+  /* 입력창 */
+  input,
+  textarea,
+  .btn {
+    max-width: 100%;
+  }
+
+
+  /* 플로팅 버튼 */
+  .top_btn {
+    right: 16px;
+    bottom: 16px;
+  }
+
+  
+}
